@@ -1,0 +1,37 @@
+Starting Jingle Negotiation as Responder
+
+
+Received Session Initiate:-
+<iq xmlns="jabber:client" to="node2@example.com/balcony" type="set" id="5" from="node1@example.com/orchard">
+  <jingle xmlns="urn:xmpp:jingle:1" action="session-initiate" initiator="node1@example.com/orchard" sid="a73sjjvkla37jfea">
+    <content name="xmlstream" creator="initiator">
+      <description xmlns="urn:xmpp:jingle:apps:xmlstream:0" />
+      <transport xmlns="urn:xmpp:jingle:transports:raw-udp:1">
+        <candidate generation="0" ip="localhost" component="1" port="13540" id="a9j3mnbtu1" />
+</transport>
+</content>
+</jingle>
+</iq>
+
+
+Extracted Other peers address: (u'localhost', 13540)
+
+
+Sent Session Accept:-
+<iq to="node1@example.com/orchard" type="set" id="5" from="node2@example.com/balcony">
+  <jingle xmlns="urn:xmpp:jingle:1" action="session-accept" initiator="node1@example.com/orchard" responder="node2@example.com/balcony" sid="a73sjjvkla37jfea">
+    <content name="xmlstream" creator="initiator">
+      <description xmlns="urn:xmpp:jingle:apps:xmlstream:0" />
+      <transport xmlns="urn:xmpp:jingle:transports:raw-udp:1">
+        <candidate generation="0" ip="localhost" component="1" id="a9j3mnbtu1" port="13550" />
+</transport>
+</content>
+</jingle>
+</iq>
+
+
+Starting direct p2p link
+
+Recieved Node1 from other peer
+
+Sent Node2 to other peer
